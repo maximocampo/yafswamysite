@@ -74,6 +74,14 @@ const int = new IntervalTimer(() => {
         int.resume()
         span.innerHTML = word + ' ';
       }
+      span.ontouchstart = () => {
+        int.pause()
+        span.innerHTML = '<b>yaf swamy</b> ';
+      }
+      span.ontouchend = () => {
+        int.resume()
+        span.innerHTML = word + ' ';
+      }
     
       words.appendChild(span)
     });
