@@ -1,0 +1,48 @@
+
+body {
+  font-family: Courier, Courier New, monospace;
+  display: flex;
+  font-size: 0.4rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container {
+  width: 32%;
+  position: relative;
+  margin-top: 10%;
+}
+
+#words {
+  font-family: Courier, Courier New, monospace;
+  font-size: 0.4rem;
+  text-align: justify;
+  word-break: break-word;
+  cursor: none;
+  margin: 0;
+  padding: 0
+}
+
+.bandcamp{
+  width: 350px; height: 621px; border:none
+}
+
+@media screen and (max-width: 992px) {
+
+  .bandcamp{
+    width: 80vw; height: 55vh;
+  }
+  #container {
+    width: 100%;
+    left: 0;
+    margin: 0;
+  }
+
+  #words {
+    font-size: 2rem;
+  }
+
+  body {
+    font-size: 2rem;
+  }
+}
