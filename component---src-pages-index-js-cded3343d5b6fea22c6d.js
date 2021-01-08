@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{RXBc:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),c=t.n(a),i=t("Bl7J"),o=t("reCY");t("zLVn"),t("kzwF"),t("26OR"),t("CdX6"),t("doQp"),t("1PzU"),t("nij6"),e.default=function(){return c.a.createElement(i.a,null,c.a.createElement(o.b,null))}},nij6:function(n,e,t){n.exports=t.p+"static/bloodgif-9ec04add720b963b1d496f559440593d.gif"}}]);
+//# sourceMappingURL=component---src-pages-index-js-cded3343d5b6fea22c6d.js.map
