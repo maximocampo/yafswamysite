@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+@font-face {
+  font-family: Business;
+  src: url(./../images/Business-History/BusinessHistory-Regular.otf);
+}
 
 html {
   -ms-text-size-adjust: 100%;
@@ -22,7 +28,8 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
-  min-height: 100vh
+  min-height: 100vh;
+  font-size: 100%
 }
 article,
 aside,
@@ -87,11 +94,11 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'EB Garamond';
+  font-family: Menlo;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 30px;
 }
 mark {
   background-color: #ff0;
@@ -624,8 +631,6 @@ pre tt:after {
   animation: marqueeleft 150s linear infinite;
 }
 
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
+video {
+  object-fit: fill;
 }
