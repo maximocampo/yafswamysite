@@ -37,14 +37,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-        spreadsheetId: '1KSbiYVXgglRO498kDySG5W59JCdO2xICg5n2rVf8XKo',
-        worksheetTitle: '1',
-        credentials: require('./src/client_secret.json')
-      }
-    },
-    {
       resolve: "gatsby-plugin-firebase",
       options: {
         credentials: {

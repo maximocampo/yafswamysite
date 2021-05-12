@@ -26,6 +26,7 @@ export default {
     ]
   },
   "epk": {
+    "download": "DOWNLOAD",
     "bio": ["YAF SWAMY came to life in 2019, when Maximo Campo and Santiago Cueto met in" +
       " Mexico City. Their shared interests in experimental production techniques and genres " +
       "including hyperpop, outsider, and new wave drew them together to start playing music at a " +
@@ -49,6 +50,6 @@ export default {
     ]
   },
   "dametumail": {
-    "desc": "Give us your email and we'll gift you a demo!"
+    "desc": "Give us your email and we'll gift you a surprise !"
   }
 }

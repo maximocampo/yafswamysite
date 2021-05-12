@@ -3,16 +3,6 @@
  * with Gatsby's useStaticQuery component
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
- *
- *
- *  bird:
- *  <Draggable
- start={{ x: 0, y: 0 }}
- >
- <div style={{width: 300, height: 300}}>
- <img src="https://lh3.googleusercontent.com/proxy/0q-VE0gskYhbyDt0w33eJx4Ji65K5bOKOqFW7VIbklZyMotKqn0lqdVmTgeq8c4pACo=s0-d" alt=""/>
- </div>
- </Draggable>
  */
 
 import React, {useState} from "react"
@@ -26,7 +16,7 @@ import Videow from "../images/Herblike Hoofs Video.mp4";
 import gifigifi from "../images/ezgif.com-gif-maker.gif";
 import {useWindowSize} from "../hooks/useWindowSize"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, audio }) => {
   const {width} = useWindowSize()
   const [t, setLang] = useState(es);
   const [muted, setMuted] = useState(true);
@@ -66,7 +56,7 @@ const Layout = ({ children }) => {
               </video>
             }
           </div>
-          {width > 840 &&
+          {audio && width > 840 &&
           <div onClick={() => setMuted(!muted)} style={{
             position: 'fixed',
             width: '50px',

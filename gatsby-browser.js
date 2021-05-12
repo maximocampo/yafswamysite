@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {cloneElement} from 'react';
 import Layout from './src/components/layout';
 import "firebase/auth"
 import "firebase/firestore"

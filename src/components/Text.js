@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const Text = ({render, children, style, left, top, width, span, hover, height, ...props}) => {
+const Text = ({render, children, style, left, top, width, span, hover, height, noblack, ...props}) => {
 	const [_hover, setHover] = useState(false);
 	const [contact, setContact] = useState(false);
 	
@@ -21,10 +21,15 @@ const Text = ({render, children, style, left, top, width, span, hover, height, .
 	const textstyles = {
 		fontSize: 15,
 		fontFamily: 'Menlo',
-		backgroundColor: 'black',
-		color: hover ? (_hover ? hover : 'white') : 'white',
+		color: noblack ? 'black' : (hover ? (_hover ? hover : 'white') : 'white'),
 		marginBottom: 6,
+		backgroundColor: noblack ? 'none' : 'black',
+		...style
 	};
+	
+	if (!children) {
+		return null
+	}
 	
 	return typeof children === 'string'
 		? <span onMouseEnter={hoverOn} onMouseLeave={hoverOff} style={{...textstyles, ...contstyles}} {...props}>{children}</span>

@@ -32,6 +32,7 @@ export default {
     ]
   },
   "epk": {
+    "download": "DESCARGAR",
     "bio": ["YAF SWAMY cobró vida en el 2019, cuando Máximo Campo y " +
       "Santiago Cueto se conocieron en la Ciudad de México. Sus intereses " +
       "compartidos por técnicas de producción experimentales y géneros como hyperpop, " +
@@ -56,6 +57,6 @@ export default {
     ]
   },
   "dametumail": {
-    "desc": "Al darnos tu email te regalamos un demo!"
+    "desc": "Danos tu mail y te regalamos una sorpresa !"
   }
 }

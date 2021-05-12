@@ -1,16 +1,44 @@
 import './home.css'
-import React, {useContext, useState} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import {TransCtx} from '../hooks/useTrans';
-import Gif from '../images/ezgif.com-gif-maker2.gif'
+import Gif from '../images/3dgifmaker74077.gif'
 import Draggable from "react-draggable";
 import {useWindowSize} from "../hooks/useWindowSize";
 import Text from "./Text";
+import firebase from "gatsby-plugin-firebase"
 
 const Home = () => {
   const [contact, setContact] = useState(false);
+  const [text, setText] = useState({});
   const {t} = useContext(TransCtx);
   const toggleContact = () => setContact(!contact);
   const {width} = useWindowSize()
+  
+  useEffect(() => {
+    (async () => {
+        //const thing6 = await firebase.firestore().collection('emails').get();
+        //const emails = thing6.docs.map(doc => doc.data().email);
+        //
+        //
+        //  function remove_duplicates(array_){
+        //      var ret_array = new Array();
+        //      for (var a = array_.length - 1; a >= 0; a--) {
+        //          for (var b = array_.length - 1; b >= 0; b--) {
+        //              if(array_[a] == array_[b] && a != b){
+        //                  delete array_[b];
+        //              }
+        //          };
+        //          if(array_[a] != undefined)
+        //              ret_array.push(array_[a]);
+        //      };
+        //      return ret_array;
+        //  }
+        const thing = await firebase.firestore().collection('content').doc(t.lang).get()
+        const {home} = thing.data()
+        
+        setText(home)
+    })()
+  }, [t.lang])
   
   return (
     <>
@@ -31,21 +59,22 @@ const Home = () => {
         <div
           style={{
             border: '2px dashed white',
-            height: 200,
+            height: 135,
             zIndex: 100,
-            width: 300,
+            width: 400,
             backgroundColor: 'black',
             color: 'white',
             padding: 20,
             pointerEvents: 'none'
           }}>
           <p>contact</p>
-          <p>management / booking: <a style={{pointerEvents: 'auto'}} href="mailto:antonio.cueto96@gmail.com">
-            antonio.cueto96@gmail.com
-          </a></p>
-          <p>inquiries: <a style={{pointerEvents: 'auto'}} href="mailto:yafswamy@gmail.com">
-            yafswamy@gmail.com
-          </a></p>
+          <p>
+              management / booking / inquiries:
+              <br/>
+              <a style={{pointerEvents: 'auto'}} href="mailto:yafswamy@gmail.com">
+                  yafswamy@gmail.com
+              </a>
+          </p>
         </div>
       </div>
       }
@@ -82,22 +111,22 @@ const Home = () => {
         className="home-text-2"
         left={width > 840 ? 12 : null}
         top={width > 840 ? "160px" : null}
-        width={width > 840 ? 400 : null}>{t.index.bio.slice(0, 1)}</Text>
+        width={width > 840 ? 400 : null}>{[text.p1]}</Text>
       <Text
         className="home-text-2"
         left={width > 840 ? 8 : null}
         top={width > 840 ? "402px" : null}
-        width={width > 840 ? 300:null}>{t.index.bio.slice(1, 2)}</Text>
+        width={width > 840 ? 300:null}>{[text.p2]}</Text>
       <Text
         className="home-text-2"
         top={width > 840 ? "550px" : null}
         left={width > 840 ? 10 : null}
-        width={width > 840 ? "300px":null}>{t.index.bio.slice(2, 3)}</Text>
+        width={width > 840 ? "300px":null}>{[text.p3]}</Text>
       <Text
         className="home-text-2"
         left={width > 840 ? 12 : null}
         top={width > 840 ? "640px" : null}
-        width={width > 840 ? 300 :null}>{t.index.bio.slice(3, 4)}</Text>
+        width={width > 840 ? 300 :null}>{[text.p4]}</Text>
   
       <div style={{
         position: width > 840 ? 'absolute' : 'static',
@@ -111,7 +140,7 @@ const Home = () => {
         width: '100',
         zIndex: 10
       }}>
-        <img width={280} height={280} src={Gif} alt="" onClick={() => window.location.assign('https://yafswamy.bandcamp.com/')}/>
+        <img width={300} height={300} src={Gif} alt="" onClick={() => window.location.assign('https://yafswamy.bandcamp.com/')}/>
       </div>
       
       <div style={{position: 'relative', marginTop: width > 840 ? -90 : -160, marginLeft: width > 840 ? 0 : -200, width: '100vw'}}>
