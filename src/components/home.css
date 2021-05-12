@@ -1,0 +1,14 @@
+.home-text-1 {
+  margin-top: 30px;
+  height: fit-content;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 720px) {
+  .home-text-1 {
+    margin: 30px
+  }
+  .home-text-2 {
+    margin: 30px
+  }
+}
