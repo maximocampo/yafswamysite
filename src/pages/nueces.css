@@ -1,0 +1,54 @@
+.home_container{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_flipbook_container {
+    margin: 5%;
+    height: 69vw;
+    width: 100%;
+}
+
+@media screen and (min-width: 450px) {
+
+    .home_container{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .home_flipbook_container {
+        margin: 30px;
+        height: 62vw;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 830px) {
+
+    .home_flipbook_container {
+        height: 50vw;
+        width: 64.7%;
+    }
+}
+
+@media screen and (min-width: 830px) {
+
+    .home_flipbook_container {
+        height: 50vw;
+        width: 64.7%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .home_flipbook_container {
+        height: 555px;
+        width: 720px;
+    }
+}
