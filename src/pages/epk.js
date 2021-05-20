@@ -4,8 +4,9 @@ import {useWindowSize} from "../hooks/useWindowSize";
 import goma from '../images/logobeinrosa.png'
 import firebase from "gatsby-plugin-firebase"
 import {TransCtx} from "../hooks/useTrans";
-import rola from '../components/Snakesong Final Master.wav'
+import rola from '../components/NUECES MASTER.wav'
 import Draggable from "react-draggable";
+import Nuecesbook from '../pages/nueces.js'
 
 const EPK = () => {
     const [text, setText] = useState([])
@@ -28,7 +29,9 @@ const EPK = () => {
                 position: 'fixed',
                 width: '100vw',
                 height: '100vh',
-                backgroundImage: 'url(https://firebasestorage.googleapis.com/v0/b/yafswamy-mainsite.appspot.com/o/Cover%20Art%20Ivana.jpg?alt=media&token=4b778ed4-5bad-4630-8f48-df37c4876213)',
+                backgroundImage: 'url(https://firebasestorage.googleapis.com/v0/b/yafswamy-mainsite.appspot.com/o/artwork.jpeg?alt=media&token=0910813a-5e87-4f5e-aebe-a5b6241edf6d)',
+                backgroundSize: 'cover',
+                backgroundPositionY: '100%'
             }}/>
       <div
         style={{
@@ -40,7 +43,7 @@ const EPK = () => {
           display:'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          background: 'radial-gradient(circle, rgba(255,255,255,1) 66%, rgba(198,255,196,0) 98%)',
+          background: 'radial-gradient(circle, rgba(255,255,255,0.95) 50%, rgba(198,255,196,0) 98%)',
           overflow: 'auto',
         }}
       >
@@ -95,13 +98,21 @@ const EPK = () => {
                   )
           })}
             <audio controls src={rola}></audio>
+            <Nuecesbook style={{position: 'static'}} />
+            <Text
+                onClick={() => window.location.assign(`/nueces.pdf`)}
+                style={{textDecoration: 'underline', cursor: 'pointer'}}
+                hover={'#ff00ae'}
+                noblack
+            >LIBRO (PDF)
+            </Text>
             <Text noblack noblack style={{ marginTop: 30}}>
             {t.epk.bio[3]}
           </Text>
           <br/>
           <br/>
           <Text noblack hover={'#ff00ae'} style={{textAlign: 'justify'}}>
-            <a href="mailto:antonio.cueto96@gmail.com">{t.epk.bio[4]}</a>
+            <a href="mailto:yafswamy@gmail.com">{t.epk.bio[4]}</a>
             <></>
           </Text>
           <br/>
@@ -129,7 +140,7 @@ const EPK = () => {
           </a>
         </div>
       </div>
-        <Draggable>
+        {/*<Draggable>
             <div
                 style={{
                     position: 'absolute', top:0 , left: 0,
@@ -141,7 +152,7 @@ const EPK = () => {
                     backgroundImage: 'url(https://firebasestorage.googleapis.com/v0/b/yafswamy-mainsite.appspot.com/o/logosnakesong.png?alt=media&token=7515391e-30c2-4a4e-be90-14cbecccd269)'
                 }}
             />
-        </Draggable>
+        </Draggable>*/}
     </>
   );
 };

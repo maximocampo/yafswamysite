@@ -7,6 +7,10 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
                         test: /firebase/,
                         use: loaders.null(),
                     },
+                    {
+                        test: /turn.js/,
+                        use: loaders.null(),
+                    },
                 ],
             },
         })

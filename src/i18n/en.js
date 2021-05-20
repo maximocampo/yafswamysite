@@ -37,8 +37,8 @@ export default {
       "of how artificial intelligence can be used to create music through text generators and algorithmic " +
       "music production software.",
       "contact",
-      "Please get in touch with Antonio Cueto at antonio.cueto96@gmail.com for interviews, " +
-      "bookings or promo copies of “2020” for radio airplay.",
+      "Please get in touch with Yaf Swamy at yafswamy@gmail.com for interviews, " +
+      "bookings, press or general inquiries.",
       "Instagram: @yafswamy\n",
       "Facebook: Yaf Swamy"
     ],

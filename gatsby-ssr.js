@@ -4,5 +4,5 @@ import "firebase/auth"
 import "firebase/firestore"
 
 export const wrapPageElement = ({ element, props }) => {
-	return <Layout audio={props.path !== '/epk/'} {...props}>{element}</Layout>;
+	return props.path === 'nueces' ? element : <Layout audio={props.path !== '/epk/'} {...props}>{element}</Layout>;
 };
