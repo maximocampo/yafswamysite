@@ -44,8 +44,8 @@ export default {
       "explora el uso de la inteligencia artificial para crear música a través de generadores " +
       "de texto y software de producción musical algorítmica.",
       "contacto",
-      "Contacto con con Yaf Swamy por yafswamy@gmail.com para entrevistas, " +
-      "reservas, prensa y medios.",
+      "Contacto con Antonio Cueto por antonio.cueto96@gmail.com para entrevistas, " +
+      "reservas o copias promocionales de “2020” para transmisión por radio.",
       "Instagram: @yafswamy\n",
       "Facebook: Yaf Swamy"
     ],

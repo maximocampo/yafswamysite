@@ -1,7 +1,4 @@
 import './home.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "flip-book/css/font-awesome.min.css";
-import "turn.js";
 import React, {useContext, useState, useEffect} from 'react';
 import {TransCtx} from '../hooks/useTrans';
 import Gif from '../images/3dgifmaker00496.gif'
