@@ -1,6 +1,5 @@
 import './nueces.css'
 import React, { useRef, useEffect} from "react";
-import $ from "../components/turn.js"
 import nuts from '../components/NUECES MASTER.wav'
 import yd_0 from '../nessdesk/nueces.jpg'
 import yd_1 from '../nessdesk/nueces2.jpg'
@@ -43,6 +42,8 @@ import yd_37 from '../nessdesk/nueces38.jpg'
 import {useWindowSize} from "../hooks/useWindowSize";
 import bg from '../images/cielo.gif'
 import gifigifi from "../images/ezgif.com-gif-maker.gif";
+
+const $ = typeof window !== `undefined` ? require("../components/turn.js") : null
 
 const Turn = props => {
     let fadeClass = useRef(null);
