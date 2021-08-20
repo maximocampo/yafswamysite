@@ -96,6 +96,13 @@ const EPK = () => {
                   )
           })}
             {/*<audio controls src={rola}></audio>*/}
+            <iframe
+                src="https://open.spotify.com/embed/album/6vUotL3dBl5Pp4CYUtZiFc?theme=0"
+                width="100%"
+                height="380"
+                frameBorder="0"
+                allowTransparency="true"
+                allow="encrypted-media" />
             <Text noblack noblack style={{ marginTop: 30}}>
             {t.epk.bio[3]}
           </Text>
