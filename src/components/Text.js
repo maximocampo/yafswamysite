@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const Text = ({render, children, style, left, top, width, span, hover, height, noblack, ...props}) => {
+const Text = ({render, children, style, left, top, width, span, hover, height, noblack, dangerouslySetInnerHTML,...props}) => {
 	const [_hover, setHover] = useState(false);
 	const [contact, setContact] = useState(false);
 	
@@ -31,8 +31,12 @@ const Text = ({render, children, style, left, top, width, span, hover, height, n
 		return null
 	}
 	
+	if (dangerouslySetInnerHTML) {
+		return <span onMouseEnter={hoverOn} onMouseLeave={hoverOff} style={{...textstyles, ...contstyles}} {...props} dangerouslySetInnerHTML={{__html: children}} />
+	}
+	
 	return typeof children === 'string'
-		? <span onMouseEnter={hoverOn} onMouseLeave={hoverOff} style={{...textstyles, ...contstyles}} {...props}>{children}</span>
+		? <span onMouseEnter={hoverOn} onMouseLeave={hoverOff} style={{...textstyles, ...contstyles}} {...props} >{children}</span>
 		: <div style={contstyles}>
 			<p>
 				{children.map(w => {

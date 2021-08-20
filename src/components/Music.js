@@ -45,7 +45,7 @@ const Music = () => {
         <div
           style={{
             border: '2px dashed white',
-            height: 200,
+            height: 135,
             zIndex: 100,
             width: 300,
             backgroundColor: 'black',
@@ -54,16 +54,40 @@ const Music = () => {
             pointerEvents: 'none'
           }}>
           <p>contact</p>
-          <p>management / booking: <a style={{pointerEvents: 'auto'}} href="mailto:antonio.cueto96@gmail.com">
-            antonio.cueto96@gmail.com
-          </a></p>
-          <p>inquiries: <a style={{pointerEvents: 'auto'}} href="mailto:yafswamy@gmail.com">
-            yafswamy@gmail.com
-          </a></p>
+          <p>
+            management / booking / inquiries:
+            <br/>
+            <a style={{pointerEvents: 'auto'}} href="mailto:yafswamy@gmail.com">
+              yafswamy@gmail.com
+            </a>
+          </p>
         </div>
       </div>
       }
   
+      <iframe
+          style={{border: 0, minWidth: 600,  height: 120}}
+          src="https://bandcamp.com/EmbeddedPlayer/track=703087455/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+          seamless
+      >
+        <a href="https://yafswamy.bandcamp.com/track/nueces">Nueces by yaf swamy</a>
+      </iframe>
+  
+      <iframe
+          style={{border: 0, minWidth: 600, height: 120}}
+          src="https://bandcamp.com/EmbeddedPlayer/track=579221259/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+          seamless>
+        <a href="https://yafswamy.bandcamp.com/track/snakesong">snakesong by yaf swamy</a>
+      </iframe>
+      
+      <iframe
+          style={{border: 0, width: 350, height: 470}}
+          src="https://bandcamp.com/EmbeddedPlayer/album=1208154288/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+          seamless>
+        <a href="https://yafswamy.bandcamp.com/album/en-vivo-desde-rufianes-y-amigos-vr">En Vivo Desde Rufianes y Amigos VR by yaf swamy</a>
+      </iframe>
+  
+      
       <iframe
         width={width > 701 ? 700 : 700 / 2}
         height={width > 701 ? 400 : 400 / 2}

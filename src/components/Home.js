@@ -4,7 +4,7 @@ import "flip-book/css/font-awesome.min.css";
 import "turn.js";
 import React, {useContext, useState, useEffect} from 'react';
 import {TransCtx} from '../hooks/useTrans';
-import Gif from '../images/3dgifmaker74077.gif'
+import Gif from '../images/3dgifmaker00496.gif'
 import Draggable from "react-draggable";
 import {useWindowSize} from "../hooks/useWindowSize";
 import Text from "./Text";
@@ -143,7 +143,7 @@ const Home = () => {
         width: '100',
         zIndex: 10
       }}>
-        <img width={300} height={300} src={Gif} alt="" onClick={() => window.location.assign('https://yafswamy.bandcamp.com/')}/>
+        <img width={350} height={350} src={Gif} alt="" onClick={() => window.location.assign('https://yafswamy.bandcamp.com/')}/>
       </div>
       
       <div style={{position: 'relative', marginTop: width > 840 ? -90 : -160, marginLeft: width > 840 ? 0 : -200, width: '100vw'}}>

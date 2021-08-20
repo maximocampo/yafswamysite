@@ -4,9 +4,6 @@ import {useWindowSize} from "../hooks/useWindowSize";
 import goma from '../images/logobeinrosa.png'
 import firebase from "gatsby-plugin-firebase"
 import {TransCtx} from "../hooks/useTrans";
-import rola from '../components/NUECES MASTER.wav'
-import Draggable from "react-draggable";
-import Nuecesbook from '../pages/nueces.js'
 
 const EPK = () => {
     const [text, setText] = useState([])
@@ -29,7 +26,6 @@ const EPK = () => {
                 position: 'fixed',
                 width: '100vw',
                 height: '100vh',
-                backgroundImage: 'url(https://firebasestorage.googleapis.com/v0/b/yafswamy-mainsite.appspot.com/o/artwork.jpeg?alt=media&token=0910813a-5e87-4f5e-aebe-a5b6241edf6d)',
                 backgroundSize: 'cover',
                 backgroundPositionY: '100%'
             }}/>
@@ -87,25 +83,19 @@ const EPK = () => {
                   )
               }
               
+              console.log(key === 'p1' ? text[key].toUpperCase() : text[key])
+              
               return (
                       <>
-                          <Text noblack style={{textAlign: 'justify'}}>
-                              {key === 'p1' ? text[key].toUpperCase() : text[key]}
+                          <Text noblack style={{textAlign: 'justify'}} dangerouslySetInnerHTML>
+                              {(key === 'p1' ? text[key].toUpperCase() : text[key]).toString()}
                           </Text>
                           <br/>
                           <br/>
                       </>
                   )
           })}
-            <audio controls src={rola}></audio>
-            <Nuecesbook style={{position: 'static'}} />
-            <Text
-                onClick={() => window.location.assign(`/nueces.pdf`)}
-                style={{textDecoration: 'underline', cursor: 'pointer'}}
-                hover={'#ff00ae'}
-                noblack
-            >LIBRO (PDF)
-            </Text>
+            {/*<audio controls src={rola}></audio>*/}
             <Text noblack noblack style={{ marginTop: 30}}>
             {t.epk.bio[3]}
           </Text>

@@ -1,45 +1,48 @@
 import './nueces.css'
 import React, { useRef, useEffect} from "react";
 import $ from "../components/turn.js"
-import ym_0 from '../nesss/nueces.jpg'
-import ym_1 from '../nesss/nueces2.jpg'
-import ym_2 from '../nesss/nueces3.jpg'
-import ym_3 from '../nesss/nueces4.jpg'
-import ym_4 from '../nesss/nueces5.jpg'
-import ym_5 from '../nesss/nueces6.jpg'
-import ym_6 from '../nesss/nueces7.jpg'
-import ym_7 from '../nesss/nueces8.jpg'
-import ym_8 from '../nesss/nueces9.jpg'
-import ym_9 from '../nesss/nueces10.jpg'
-import ym_10 from '../nesss/nueces11.jpg'
-import ym_11 from '../nesss/nueces12.jpg'
-import ym_12 from '../nesss/nueces13.jpg'
-import ym_13 from '../nesss/nueces14.jpg'
-import ym_14 from '../nesss/nueces15.jpg'
-import ym_15 from '../nesss/nueces16.jpg'
-import ym_16 from '../nesss/nueces17.jpg'
-import ym_17 from '../nesss/nueces18.jpg'
-import ym_18 from '../nesss/nueces19.jpg'
-import ym_19 from '../nesss/nueces20.jpg'
-import ym_20 from '../nesss/nueces21.jpg'
-import ym_21 from '../nesss/nueces22.jpg'
-import ym_22 from '../nesss/nueces23.jpg'
-import ym_23 from '../nesss/nueces24.jpg'
-import ym_24 from '../nesss/nueces25.jpg'
-import ym_25 from '../nesss/nueces26.jpg'
-import ym_26 from '../nesss/nueces27.jpg'
-import ym_27 from '../nesss/nueces28.jpg'
-import ym_28 from '../nesss/nueces29.jpg'
-import ym_29 from '../nesss/nueces30.jpg'
-import ym_30 from '../nesss/nueces31.jpg'
-import ym_31 from '../nesss/nueces32.jpg'
-import ym_32 from '../nesss/nueces33.jpg'
-import ym_33 from '../nesss/nueces34.jpg'
-import ym_34 from '../nesss/nueces35.jpg'
-import ym_35 from '../nesss/nueces36.jpg'
-import ym_36 from '../nesss/nueces37.jpg'
-import ym_37 from '../nesss/nueces38.jpg'
+import nuts from '../components/NUECES MASTER.wav'
+import yd_0 from '../nessdesk/nueces.jpg'
+import yd_1 from '../nessdesk/nueces2.jpg'
+import yd_2 from '../nessdesk/nueces3.jpg'
+import yd_3 from '../nessdesk/nueces4.jpg'
+import yd_4 from '../nessdesk/nueces5.jpg'
+import yd_5 from '../nessdesk/nueces6.jpg'
+import yd_6 from '../nessdesk/nueces7.jpg'
+import yd_7 from '../nessdesk/nueces8.jpg'
+import yd_8 from '../nessdesk/nueces9.jpg'
+import yd_9 from '../nessdesk/nueces10.jpg'
+import yd_10 from '../nessdesk/nueces11.jpg'
+import yd_11 from '../nessdesk/nueces12.jpg'
+import yd_12 from '../nessdesk/nueces13.jpg'
+import yd_13 from '../nessdesk/nueces14.jpg'
+import yd_14 from '../nessdesk/nueces15.jpg'
+import yd_15 from '../nessdesk/nueces16.jpg'
+import yd_16 from '../nessdesk/nueces17.jpg'
+import yd_17 from '../nessdesk/nueces18.jpg'
+import yd_18 from '../nessdesk/nueces19.jpg'
+import yd_19 from '../nessdesk/nueces20.jpg'
+import yd_20 from '../nessdesk/nueces21.jpg'
+import yd_21 from '../nessdesk/nueces22.jpg'
+import yd_22 from '../nessdesk/nueces23.jpg'
+import yd_23 from '../nessdesk/nueces24.jpg'
+import yd_24 from '../nessdesk/nueces25.jpg'
+import yd_25 from '../nessdesk/nueces26.jpg'
+import yd_26 from '../nessdesk/nueces27.jpg'
+import yd_27 from '../nessdesk/nueces28.jpg'
+import yd_28 from '../nessdesk/nueces29.jpg'
+import yd_29 from '../nessdesk/nueces30.jpg'
+import yd_30 from '../nessdesk/nueces31.jpg'
+import yd_31 from '../nessdesk/nueces32.jpg'
+import yd_32 from '../nessdesk/nueces33.jpg'
+import yd_33 from '../nessdesk/nueces34.jpg'
+import yd_34 from '../nessdesk/nueces35.jpg'
+import yd_35 from '../nessdesk/nueces36.jpg'
+import yd_36 from '../nessdesk/nueces37.jpg'
+import yd_37 from '../nessdesk/nueces38.jpg'
 import {useWindowSize} from "../hooks/useWindowSize";
+import bg from '../images/cielo.gif'
+import gifigifi from "../images/ezgif.com-gif-maker.gif";
 
 const Turn = props => {
     let fadeClass = useRef(null);
@@ -64,47 +67,45 @@ const Turn = props => {
     );
 };
 
-
-
-const pages = [
-    ym_0,
-    ym_1,
-    ym_2,
-    ym_3,
-    ym_4,
-    ym_5,
-    ym_6,
-    ym_7,
-    ym_8,
-    ym_9,
-    ym_10,
-    ym_11,
-    ym_12,
-    ym_13,
-    ym_14,
-    ym_15,
-    ym_16,
-    ym_17,
-    ym_18,
-    ym_19,
-    ym_20,
-    ym_21,
-    ym_22,
-    ym_23,
-    ym_24,
-    ym_25,
-    ym_26,
-    ym_27,
-    ym_28,
-    ym_29,
-    ym_30,
-    ym_31,
-    ym_32,
-    ym_33,
-    ym_34,
-    ym_35,
-    ym_36,
-    ym_37
+const dpages = [
+    yd_0,
+    yd_1,
+    yd_2,
+    yd_3,
+    yd_4,
+    yd_5,
+    yd_6,
+    yd_7,
+    yd_8,
+    yd_9,
+    yd_10,
+    yd_11,
+    yd_12,
+    yd_13,
+    yd_14,
+    yd_15,
+    yd_16,
+    yd_17,
+    yd_18,
+    yd_19,
+    yd_20,
+    yd_21,
+    yd_22,
+    yd_23,
+    yd_24,
+    yd_25,
+    yd_26,
+    yd_27,
+    yd_28,
+    yd_29,
+    yd_30,
+    yd_31,
+    yd_32,
+    yd_33,
+    yd_34,
+    yd_35,
+    yd_36,
+    yd_37
 ];
 
 const options = {
@@ -131,14 +132,29 @@ const Home = ({style}) => {
     
     return (
         <>
-            <div className="home_container" style={style}>
+        <div style={{
+            position: 'fixed',
+            top: 0,
+            left:0,
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
+            zIndex: -1,
+            background: `url(${bg}) center center no-repeat`,
+            backgroundSize: 'cover'
+        }}/>
+            <audio src={nuts} autoPlay />
+            <div className={style || "home_container"} style={style}>
                 <div className="home_flipbook_container">
                     <Turn
                         options={options}
                         className="flipbook"
                         style={{transition: '0.6s'}}
                     >
-                        {pages.map((page, index) => (
+                        {dpages.map((page, index) => (
                             <div key={index} className="page">
                                 <img src={page} alt="" />
                             </div>
