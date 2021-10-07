@@ -1,7 +1,7 @@
 import './home.css'
 import React, {useContext, useState, useEffect} from 'react';
 import {TransCtx} from '../hooks/useTrans';
-import Gif from '../images/3dgifmaker00496.gif'
+import Gif from '../images/3dgifmaker45045.gif'
 import Draggable from "react-draggable";
 import {useWindowSize} from "../hooks/useWindowSize";
 import Text from "./Text";
