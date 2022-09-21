@@ -1,7 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
 import Text from "../components/Text";
 import {useWindowSize} from "../hooks/useWindowSize";
-import goma from '../images/logobeinrosa.png'
 import firebase from "gatsby-plugin-firebase"
 import {TransCtx} from "../hooks/useTrans";
 
@@ -35,24 +34,24 @@ const EPK = () => {
           position: 'fixed',
           width: '100vw',
           height: '100vh',
-          backgroundColor: 'white',
           display:'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          background: 'radial-gradient(circle, rgba(255,255,255,0.95) 50%, rgba(198,255,196,0) 98%)',
           overflow: 'auto',
         }}
       >
         <div
           style={{
+              backgroundColor: 'black',
             display:'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            width: width > 840 ? 600 : '100%',
-            padding: '5%'
+            width: width > 840 ? 450 : '100%',
+            margin: '1% 5%',
+              padding: '1%'
           }}
         >
-          <Text style={{color: 'black', backgroundColor: 'none'}}>EPK</Text>
+          <Text style={{backgroundColor: 'none'}}>EPK</Text>
           <br/>
           <Text
             onClick={() => window.location.assign(`/${t.lang}epk.pdf`)}
@@ -87,7 +86,7 @@ const EPK = () => {
               
               return (
                       <>
-                          <Text noblack style={{textAlign: 'justify'}} dangerouslySetInnerHTML>
+                          <Text style={{textAlign: 'justify'}} dangerouslySetInnerHTML>
                               {(key === 'p1' ? text[key].toUpperCase() : text[key]).toString()}
                           </Text>
                           <br/>
@@ -95,27 +94,18 @@ const EPK = () => {
                       </>
                   )
           })}
-            {/*<audio controls src={rola}></audio>*/}
-            <iframe
-                src="https://open.spotify.com/embed/album/6vUotL3dBl5Pp4CYUtZiFc?theme=0"
-                width="100%"
-                height="380"
-                frameBorder="0"
-                allowTransparency="true"
-                allow="encrypted-media" />
-            <Text noblack noblack style={{ marginTop: 30}}>
+            <Text style={{ marginTop: 30}}>
             {t.epk.bio[3]}
           </Text>
           <br/>
           <br/>
-          <Text noblack hover={'#ff00ae'} style={{textAlign: 'justify'}}>
+          <Text hover={'#ff00ae'} style={{textAlign: 'justify'}}>
             <a href="mailto:yafswamy@gmail.com">{t.epk.bio[4]}</a>
             <></>
           </Text>
           <br/>
           <br/>
           <Text
-              noblack
             onClick={() => window.location.assign('https://www.instagram.com/yafswamy/')}
             style={{textDecoration: 'underline', cursor: 'pointer'}}
             hover={'#ff00ae'}
@@ -125,16 +115,12 @@ const EPK = () => {
           <br/>
           <br/>
           <Text
-              noblack
             onClick={() => window.location.assign('https://www.facebook.com/yafswamy/')}
             style={{textDecoration: 'underline', cursor: 'pointer'}}
             hover={'#ff00ae'}
           >
             {t.epk.bio[6]}
           </Text>
-          <a href="https://goma.world">
-            <img src={goma} alt="goma"/>
-          </a>
         </div>
       </div>
         {/*<Draggable>

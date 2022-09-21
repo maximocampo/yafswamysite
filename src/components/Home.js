@@ -16,23 +16,26 @@ const Home = () => {
   
   useEffect(() => {
     (async () => {
-        //const thing6 = await firebase.firestore().collection('emails').get();
-        //const emails = thing6.docs.map(doc => doc.data().email);
-        //
-        //
-        //  function remove_duplicates(array_){
-        //      var ret_array = new Array();
-        //      for (var a = array_.length - 1; a >= 0; a--) {
-        //          for (var b = array_.length - 1; b >= 0; b--) {
-        //              if(array_[a] == array_[b] && a != b){
-        //                  delete array_[b];
-        //              }
-        //          };
-        //          if(array_[a] != undefined)
-        //              ret_array.push(array_[a]);
-        //      };
-        //      return ret_array;
-        //  }
+        const thing6 = await firebase.firestore().collection('emails').get();
+        const emails = thing6.docs.map(doc => doc.data().email);
+        
+        
+          function remove_duplicates(array_){
+              var ret_array = new Array();
+              for (var a = array_.length - 1; a >= 0; a--) {
+                  for (var b = array_.length - 1; b >= 0; b--) {
+                      if(array_[a] == array_[b] && a != b){
+                          delete array_[b];
+                      }
+                  };
+                  if(array_[a] != undefined)
+                      ret_array.push(array_[a]);
+              };
+              return ret_array;
+          }
+          
+          console.log('emails---->', remove_duplicates(emails))
+          
         const thing = await firebase.firestore().collection('content').doc(t.lang).get()
         const {home} = thing.data()
         

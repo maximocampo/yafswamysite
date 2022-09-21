@@ -42,7 +42,7 @@ const Layout = ({ children, audio }) => {
             flexDirection: 'column',
             zIndex: -1,
             background: width > 840 || `url(${gifigifi}) center center no-repeat`,
-            filter: 'invert(1) saturate(28.5) hue-rotate(444deg) brightness(0.8)',
+            filter: 'saturate(299) grayscale(100%) brightness(1) contrast(300%) blur(34px) invert(1) brightness(0.4)',
             backgroundSize: width > 840 || 'cover'
           }}>
             {width > 840 &&
