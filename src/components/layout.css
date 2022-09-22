@@ -634,3 +634,7 @@ pre tt:after {
 video {
   object-fit: fill;
 }
+
+a {
+  color: royalblue;
+}
